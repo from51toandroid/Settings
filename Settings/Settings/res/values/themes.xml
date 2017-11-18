@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <attr name="ic_menu_add" format="reference" />
+    <attr name="ic_menu_moreoverflow" format="reference" />
+    <attr name="ic_wps" format="reference" />
+    <attr name="setup_divider_color" format="reference" />
+    <attr name="wifi_signal" format="reference" />
+
+    <style name="SetupWizardWifiTheme" parent="android:Theme.Holo.NoActionBar">
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="@*android:preferencePanelStyle">@*android:style/PreferencePanel.Dialog</item>
+        <item name="android:alertDialogTheme">@style/Theme.WifiDialog</item>
+        <item name="ic_menu_add">@drawable/ic_menu_add_dark</item>
+        <item name="ic_menu_moreoverflow">@*android:drawable/ic_menu_moreoverflow_holo_dark</item>
+        <item name="ic_wps">@drawable/ic_wps_dark</item>
+        <item name="setup_divider_color">@color/setup_divider_color_dark</item>
+        <item name="wifi_signal">@drawable/wifi_signal_dark</item>
+    </style>
+
+    <style name="SetupWizardWifiTheme.Light" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="@*android:preferencePanelStyle">@*android:style/PreferencePanel.Dialog</item>
+        <item name="android:alertDialogTheme">@style/Theme.Light.WifiDialog</item>
+        <item name="ic_menu_add">@drawable/ic_menu_add_light</item>
+        <item name="ic_menu_moreoverflow">@*android:drawable/ic_menu_moreoverflow_holo_dark</item>
+        <item name="ic_wps">@drawable/ic_wps_light</item>
+        <item name="setup_divider_color">@color/setup_divider_color_light</item>
+        <item name="wifi_signal">@drawable/wifi_signal_light</item>
+    </style>
+
+    <style name="Theme.WifiDialog" parent="@*android:style/Theme.Holo.Dialog.Alert">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="ic_menu_add">@drawable/ic_menu_add_dark</item>
+        <item name="ic_menu_moreoverflow">@*android:drawable/ic_menu_moreoverflow_holo_dark</item>
+        <item name="ic_wps">@drawable/ic_wps_dark</item>
+        <item name="wifi_signal">@drawable/wifi_signal_dark</item>
+    </style>
+
+    <style name="Theme.Light.WifiDialog" parent="@*android:style/Theme.Holo.Light.Dialog.Alert">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="ic_menu_add">@drawable/ic_menu_add_light</item>
+        <item name="ic_menu_moreoverflow">@*android:drawable/ic_menu_moreoverflow_holo_dark</item>
+        <item name="ic_wps">@drawable/ic_wps_light</item>
+        <item name="wifi_signal">@drawable/wifi_signal_light</item>
+    </style>
+	
+	
+	
+	<!--
+    <style name="Theme.Settings" parent="@android:style/Theme.Holo">
+	<item name="android:actionBarStyle">@android:style/Widget.Holo.ActionBar.Solid</item>
+	-->
+	<!--
+    <style name="Theme.Settings" parent="@android:style/Theme.Holo">
+        <item name="@*android:preferenceHeaderPanelStyle">@style/PreferenceHeaderPanelSinglePane</item>
+        <item name="@*android:preferencePanelStyle">@style/PreferencePanelSinglePane</item>
+        <item name="@*android:preferenceListStyle">@style/PreferenceHeaderListSinglePane</item>
+        <item name="@*android:preferenceFragmentListStyle">@style/PreferenceFragmentListSinglePane</item>
+        <item name="@*android:preferenceFragmentPaddingSide">@dimen/settings_side_margin</item>
+        <item name="apnPreferenceStyle">@style/ApnPreference</item>
+        <item name="ic_menu_add">@drawable/ic_menu_add_dark</item>
+        <item name="ic_menu_moreoverflow">@*android:drawable/ic_menu_moreoverflow_holo_dark</item>
+        <item name="ic_wps">@drawable/ic_wps_dark</item>
+        <item name="wifi_signal">@drawable/wifi_signal_dark</item>
+        <item name="android:actionBarStyle">@android:style/Widget.Holo.ActionBar.Solid</item>
+    </style>
+
+    -->
+    <style name="Theme.Settings123" parent="@android:style/Theme.Holo.Light">
+        <item name="@*android:preferenceHeaderPanelStyle">@style/PreferenceHeaderPanelSinglePane</item>
+        <item name="@*android:preferencePanelStyle">@style/PreferencePanelSinglePane</item>
+        <item name="@*android:preferenceListStyle">@style/PreferenceHeaderListSinglePane</item>
+        <item name="@*android:preferenceFragmentListStyle">@style/PreferenceFragmentListSinglePane</item>
+        <item name="@*android:preferenceFragmentPaddingSide">@dimen/settings_side_margin</item>
+        <item name="apnPreferenceStyle">@style/ApnPreference</item>
+        <item name="ic_menu_add">@drawable/ic_menu_add_light</item>
+        <item name="ic_menu_moreoverflow">@*android:drawable/ic_menu_moreoverflow_holo_light</item>
+        <item name="ic_wps">@drawable/ic_wps_light</item>
+        <item name="wifi_signal">@drawable/wifi_signal_light</item>
+        <item name="android:actionBarStyle">@android:style/Widget.Holo.Light.ActionBar.Solid</item>
+    </style>
+
+
+   
+
+
+    <style name="Theme.Settings" parent="android:Theme.Holo.Light">
+
+    
+        
+        <!--
+        <item name="android:actionBarStyle">@*android:style/Widget.Holo.ActionBar.Solid.SelfDef</item>
+         -->
+        <item name="@*android:preferenceHeaderPanelStyle">@style/PreferenceHeaderPanelSinglePane</item>
+        <item name="@*android:preferencePanelStyle">@style/PreferencePanelSinglePane</item>
+        <item name="@*android:preferenceListStyle">@style/PreferenceHeaderListSinglePane</item>
+        <item name="@*android:preferenceFragmentListStyle">@style/PreferenceFragmentListSinglePane</item>
+        <item name="@*android:preferenceFragmentPaddingSide">@dimen/settings_side_margin</item>
+        <item name="apnPreferenceStyle">@style/ApnPreference</item>
+        <item name="ic_menu_add">@drawable/ic_menu_add_dark</item>
+
+        
+        <item name="ic_menu_moreoverflow">@drawable/ic_menu_add_dark</item>
+        
+        <item name="ic_wps">@drawable/ic_wps_dark</item>
+        <item name="wifi_signal">@drawable/wifi_signal_dark</item>
+        <item name="android:actionBarStyle"> @style/MyActionBar</item>
+
+        <!--
+        <item name="android:background">@color/colorlanse</item> 
+        -->
+    </style>
+
+
+    
+<style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:background">@color/colorlanse</item>        
+    </style>
+
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    
+</resources>
+
+
+<!--
+
+ic_menu_moreoverflow_normal_holo_dark
+<style name="MyActionBar" parent="@*android:style/Widget.Holo.ActionBar.Solid.SelfDef">
+<item name="ic_menu_moreoverflow">@*android:drawable/ic_menu_moreoverflow_holo_light</item>
+<item name="android:actionBarStyle"> @style/MyActionBar</item>
+
+<style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:background">@color/colorlanse</item>
+    </style>
+
+
+    <public type="style" name="Theme.WithActionBar" id="0x01030069" />
+  <public type="style" name="Theme.NoTitleBar.OverlayActionModes" id="0x0103006a" />
+  <public type="style" name="Theme.Holo" id="0x0103006b" />
+  <public type="style" name="Theme.Holo.NoActionBar" id="0x0103006c" />
+  <public type="style" name="Theme.Holo.NoActionBar.Fullscreen" id="0x0103006d" />
+  <public type="style" name="Theme.Holo.Light" id="0x0103006e" />
+  <public type="style" name="Theme.Holo.Dialog" id="0x0103006f" />
+  <public type="style" name="Theme.Holo.Dialog.MinWidth" id="0x01030070" />
+  <public type="style" name="Theme.Holo.Dialog.NoActionBar" id="0x01030071" />
+  <public type="style" name="Theme.Holo.Dialog.NoActionBar.MinWidth" id="0x01030072" />
+  <public type="style" name="Theme.Holo.Light.Dialog" id="0x01030073" />
+  <public type="style" name="Theme.Holo.Light.Dialog.MinWidth" id="0x01030074" />
+  <public type="style" name="Theme.Holo.Light.Dialog.NoActionBar" id="0x01030075" />
+  <public type="style" name="Theme.Holo.Light.Dialog.NoActionBar.MinWidth" id="0x01030076" />
+  <public type="style" name="Theme.Holo.DialogWhenLarge" id="0x01030077" />
+  <public type="style" name="Theme.Holo.DialogWhenLarge.NoActionBar" id="0x01030078" />
+  <public type="style" name="Theme.Holo.Light.DialogWhenLarge" id="0x01030079" />
+  <public type="style" name="Theme.Holo.Light.DialogWhenLarge.NoActionBar" id="0x0103007a" />
+  <public type="style" name="Theme.Holo.Panel" id="0x0103007b" />
+  <public type="style" name="Theme.Holo.Light.Panel" id="0x0103007c" />
+  <public type="style" name="Theme.Holo.Wallpaper" id="0x0103007d" />
+  <public type="style" name="Theme.Holo.Wallpaper.NoTitleBar" id="0x0103007e" />
+  <public type="style" name="Theme.Holo.InputMethod" id="0x0103007f" />
+    
+-->
+    
